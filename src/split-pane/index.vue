@@ -1,5 +1,5 @@
 <template>
-  <div :style="{ cursor, userSelect}" class="vue-splitter-container clearfix" @mouseup="onMouseUp" @mousemove="onMouseMove">
+  <div :style="{ cursor, userSelect}" class="vue-splitter-container clearfix" @mouseup="onMouseUp" @mousemove="onMouseMove"  @ontouchstart="onMouseUp" @ontouchmove="onMouseMove">
 
     <pane class="splitter-pane splitter-paneL" :split="split" :style="{ [type]: percent+'%'}">
       <slot name="paneL"></slot>
